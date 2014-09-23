@@ -23,6 +23,9 @@ autocmd User Node if &filetype == "javascript" | setlocal expandtab | endif
 
 Plugin 'fholgado/minibufexpl.vim' 
 Plugin 'pangloss/vim-javascript'
+set regexpengine=1
+syntax enable
+
 
 call vundle#end()            " required
 filetype plugin indent on    " required
