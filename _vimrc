@@ -13,6 +13,16 @@ call vundle#begin('$VIM/vimfiles/VundlePlugin')
 
 Plugin 'gmarik/Vundle.vim'                "Vundle必备
 Plugin 'altercation/vim-colors-solarized' "主题
+Plugin 'winmanager'
+let g:winManagerWindowLayout = "FileExplorer" 
+map <F2> :WMToggle<cr>
+Plugin 'godlygeek/tabular'
+
+Plugin 'moll/vim-node'
+autocmd User Node if &filetype == "javascript" | setlocal expandtab | endif
+
+Plugin 'fholgado/minibufexpl.vim' 
+Plugin 'pangloss/vim-javascript'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
